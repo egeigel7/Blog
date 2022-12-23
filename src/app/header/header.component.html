@@ -1,1 +1,26 @@
-<p>header works!</p>
+<mat-toolbar color="primary" class="mainToolbar">
+    <h1>Let's Ride</h1>
+    <button [routerLink]="['']" mat-raised-button>
+      <h2>Home</h2>
+    </button>
+    <button [routerLink]="['/blog']" mat-raised-button>
+      <h2>Blog</h2>
+    </button>
+    <button [routerLink]="['/projects']" mat-raised-button>
+      <h2>Projects</h2>
+    </button>
+    <button>
+      <a href="/.auth/login/add">Login</a>
+    </button>
+    <button>
+      <a href="/.auth/logout">Log out</a>
+    </button>
+    <!-- <div class="themeSelector">
+        Dark Mode
+        <div class="flex-stretch"></div>
+        <mat-icon class="mr-8">brightness_5</mat-icon>
+        <mat-slide-toggle [formControl]="toggleControl" class="mr-8">
+        </mat-slide-toggle>
+        <mat-icon>bedtime</mat-icon>
+    </div> -->
+</mat-toolbar>
